@@ -1,0 +1,54 @@
+early_epoch_start: 1830
+early_epoch_end: 1859
+late_epoch_start: 1980
+late_epoch_end: 2009
+
+test_file_type: cordeiro
+dataset_type: COHA
+
+lang_code: en
+
+#model_name: "k_means_single_target+heads"
+
+k_means_single_target:
+  k: 8
+k_means_single_target+separate_eras:
+  k: 8
+k_means_single_target+heads:
+  k: 8
+k_means_all_targets:
+  k: 128
+  max_num_examples: 15000
+  minimum_uniform_alloc: 10
+
+k_means_all_targets+heads:
+  k: 128
+  max_num_examples: 15000
+  constituent_multiplier: 4
+  minimum_uniform_alloc: 10
+
+k_means_all_targets+mods:
+  k: 128
+  max_num_examples: 15000
+  constituent_multiplier: 4
+  minimum_uniform_alloc: 10
+
+k_means_all_targets+mods+heads:
+  k: 128
+  max_num_examples: 15000
+  constituent_multiplier: 4
+  minimum_uniform_alloc: 10
+
+
+aff_prop_single_target:
+  max_num_examples: 500
+
+k_medoids_single_target:
+  k: 8
+k_medoids_all_targets:
+  k: 64
+
+k_medoids_all_targets+heads:
+  k: 64
+  constituent_multiplier: 1
+  minimum_uniform_alloc: 1

@@ -1,0 +1,7 @@
+BERT_VECS_C = "bert-vec"
+RANDOM_VECS_C = "random-idx"
+SECOND_ORDER_VECS_C = "random-2nd-order-idx"
+FREQUENCY_C = "frequency"
+HEAD_PROD_C = "head_productivity"
+MOD_PROD_C = "mod_productivity"
+LEMMA_SPAN_C = "lemma-span"

@@ -1,0 +1,23 @@
+early_epoch_start: 1700
+early_epoch_end: 1759
+late_epoch_start: 1870
+late_epoch_end: 1899
+
+test_file_type: ghost
+related_test_file_type: ghost_related
+dataset_type: DTA
+
+lang_code: de
+
+k_means_all_targets+heads:
+  k: 128
+  max_num_examples: 15000
+  constituent_multiplier: 1
+  minimum_uniform_alloc: 10
+
+k_means_all_targets+mods:
+  k: 128
+  max_num_examples: 15000
+  constituent_multiplier: 1
+  minimum_uniform_alloc: 10
+

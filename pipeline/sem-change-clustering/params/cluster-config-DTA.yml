@@ -1,0 +1,45 @@
+early_epoch_start: 1700
+early_epoch_end: 1759
+late_epoch_start: 1870
+late_epoch_end: 1899
+
+test_file_type: ghost
+dataset_type: DTA
+
+lang_code: de
+
+k_means_single_target:
+  k: 3
+k_means_single_target+separate_eras:
+  k: 4
+k_means_single_target+heads:
+  k: 8
+k_means_all_targets:
+  k: 128
+  max_num_examples: 15000
+  constituent_multiplier: 4
+  minimum_uniform_alloc: 10
+k_means_all_targets+heads:
+  k: 128
+  max_num_examples: 15000
+  constituent_multiplier: 4
+  minimum_uniform_alloc: 10
+k_means_all_targets+mods:
+  k: 128
+  max_num_examples: 15000
+  constituent_multiplier: 4
+  minimum_uniform_alloc: 10
+
+k_means_all_targets+mods+heads:
+  k: 128
+  max_num_examples: 15000
+  constituent_multiplier: 4
+  minimum_uniform_alloc: 10
+
+aff_prop_single_target:
+  max_num_examples: 500
+
+k_medoids_single_target:
+  k: 5
+k_medoids_all_targets:
+  k: 64

@@ -1,0 +1,27 @@
+early_epoch_start: 1830
+early_epoch_end: 1859
+late_epoch_start: 1980
+late_epoch_end: 2009
+
+test_file_type: cordeiro
+related_test_file_type: cordeiro_related
+dataset_type: COHA
+
+lang_code: en
+
+#model_name: "k_means_single_target+heads"
+
+
+k_means_all_targets+heads:
+  k: 128
+  max_num_examples: 15000
+  constituent_multiplier: 1
+  minimum_uniform_alloc: 10
+
+k_means_all_targets+mods:
+  k: 128
+  max_num_examples: 15000
+  constituent_multiplier: 1
+  minimum_uniform_alloc: 10
+
+
